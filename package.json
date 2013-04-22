@@ -1,0 +1,30 @@
+{
+  "name": "ds18b20-cosm",
+  "version": "0.0.1",
+  "description": "Send temperature information to the Cosm platform",
+  "author": "Christophe Hamerling <christophe.hamerling@gmail.com>",
+  "keywords": [
+    "raspberry",
+    "pi",
+    "sensor",
+    "iot",
+    "rpi",
+    "ds18b20"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chamerling/ds18b20-cosm.git"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://mths.be/mit"
+  }]
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "request" : "latest",
+    "express" : "latest",
+    "ds18b20" : "0.0.1"
+  }
+}
