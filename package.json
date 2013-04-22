@@ -18,7 +18,7 @@
   "licenses": [{
     "type": "MIT",
     "url": "http://mths.be/mit"
-  }]
+  }],
   "scripts": {
     "start": "node app.js"
   },
