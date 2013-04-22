@@ -1,6 +1,21 @@
 # ds18b20 Cosm
 
-Send your temperature to the cosm platform...
+Send your temperature to the [cosm](http://cosm.com) platform.
+Uses the [ds18b20 library](https://github.com/chamerling/ds18b20) to get temperature from sensor connected to a (RaspberryPi)[http://raspberry.org].
+
+Sample on [https://cosm.com/feeds/126934](https://cosm.com/feeds/126934).
+
+## Usage
+
+Check the config.js file and adapt it to your needs. Then launch the runtime
+
+    node app.js
+
+You can get some sensor information from the REST API at
+
+- http://localhost:3333
+- http://localhost:3333/sensors
+- http://localhost:3333/sensors/:sensorid
 
 ## License
 
