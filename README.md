@@ -7,7 +7,11 @@ Sample on [https://cosm.com/feeds/126934](https://cosm.com/feeds/126934).
 
 ## Usage
 
-Check the config.js file and adapt it to your needs. Then launch the runtime
+Load system modules if needed:
+
+    ./bin/modules.sh
+
+Check the config.js file and adapt it to your needs. Then launch the runtime:
 
     node app.js
 
