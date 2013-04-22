@@ -1,5 +1,6 @@
 var sensor = require('ds18b20')
   , express = require('express')
+  , request = require('request')
   , app = express();
 
 var config = require('./config');
@@ -30,7 +31,7 @@ var sense = function(callback) {
             }
 
             request({
-                url: cosm + config.config.feed,
+                url: 'http://api.cosm.com/v2/feeds/' + config.config.feed,
                 method: 'put',
                 json: true,
                 body : data,
