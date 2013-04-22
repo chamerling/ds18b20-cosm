@@ -55,15 +55,15 @@ var sense = function(callback) {
 }
 
 app.get('/', function(req, res) {
-  res.send(200, temp);
+  res.json(temp);
 });
 
 app.get('/sensors', function(req, res) {
   sensor.sensors(function(err, ids) {
     if (err) {
-      res.send(500, err);
+      res.json(500, err);
     } else {
-      res.send(ids);
+      res.json(ids);
     }
   });
 });
@@ -71,9 +71,9 @@ app.get('/sensors', function(req, res) {
 app.get('/sensors/:id', function(req, res) {
   sensor.temperature(req.params.id, function(err, value) {
     if (err) {
-      res.send(500, err);
+      res.json(500, err);
     } else {
-      res.send(value);
+      res.json(200, { value : value, date : new Date() });
     }
   })
 });
