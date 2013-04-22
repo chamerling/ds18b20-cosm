@@ -3,8 +3,6 @@
 Send your temperature to the [cosm](http://cosm.com) platform.
 Uses the [ds18b20 library](https://github.com/chamerling/ds18b20) to get temperature from sensor connected to a (RaspberryPi)[http://www.raspberrypi.org].
 
-Sample on [https://cosm.com/feeds/126934](https://cosm.com/feeds/126934).
-
 ## Usage
 
 Load system modules if needed:
@@ -20,6 +18,12 @@ You can get some sensor information from the REST API at
 - http://localhost:3333
 - http://localhost:3333/sensors
 - http://localhost:3333/sensors/:sensorid
+
+## Samples
+
+Sample on [https://cosm.com/feeds/126934](https://cosm.com/feeds/126934).
+
+![Sensor data sample](http://f.cl.ly/items/2D0k1Z0U1T0p2Y1t0l3J/cosm.png "Sensor date sample")
 
 ## License
 
